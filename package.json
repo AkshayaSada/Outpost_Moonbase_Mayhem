@@ -1,0 +1,19 @@
+{
+  "name": "outpost_moonbase_mayhem_v9_source-(1)",
+  "version": "1.0.0",
+  "description": "{     \"path\": \"README.md\",     \"text\": \"# OUTPOST: Moonbase Mayhem\\n\\nA child-friendly multiplayer Moonbase social-deduction game for the NASA Space Apps Challenge.\\n\\n## Play\\nOpen the app, choose a nickname, create a room and share the five-character code. Friends join with the code. The host starts the round. One astronaut is secretly assigned as saboteur; the rest are crew. Crew members complete science tasks, respond to sabotage and can call a meeting to vote. Crew wins by completing all tasks or finding the saboteur. Saboteur wins by pushing chaos to 100 or outnumbering the crew.\\n\\n## Stack\\n- Browser frontend: HTML, CSS and JavaScript\\n- Backend: Hatchable serverless JavaScript API routes\\n- Database: PostgreSQL (`outpost_rooms`)\\n- Multiplayer updates: Hatchable events channels (`room:<CODE>`)\\n- No paid AI dependency or required NASA API key\\n\\n## Project files\\n- `public/index.html`, `public/style.css`, `public/app.js`: game client\\n- `api/rooms/*`: room creation, joining, state snapshots and actions\\n- `api/events-token.js`: realtime channel authorization\\n- `migrations/001_outpost.sql`: persistent room schema\\n- `public/DATA_SOURCES.md`: science references and simulation assumptions\\n\\n## Local development\\nThe hosted deployment uses the Hatchable runtime and SDK. The API handlers import `db` and `events` from `hatchable`, so they are not standalone Node/Express routes. For local iteration, serve `public/` with a static server and configure an API-compatible development backend or use the hosted preview. Apply the migration through the platform deployment system.\\n\\n## Privacy and safety\\nNicknames are limited to 16 characters. No account, email, location or personal details are requested. Do not enter real names or sensitive information. Room codes are for friendly private play, not secure invitations for sensitive data.\\n\\n## Known limitations\\n- Turn/action-based multiplayer, not high-frequency real-time movement.\\n- Compact demo loop, not the full 30-day solo survival simulation.\\n- Character art uses emoji and CSS-built lunar scenery rather than custom 3D models.\\n- No live NASA telemetry is ingested; science content is supported by NASA references.\\n- Simultaneous conflicting actions are rejected with a retry message.\\n- Multiple independent browser sessions still need a live deployment test before a public demonstration.\\n\\n## Deployment\\nDeploy through the Hatchable project console/runtime. The migration is applied on deployment. `public/` files are served by the CDN and `api/` files become API endpoints. A personal project may show a platform sign-in wall until the owner changes sharing/visibility in project settings.\",     \"hash\": \"7ea76720c5931bc45e7b07163ccd266769fcc407bcf1112dfd525dde906ec373\",     \"total_lines\": 37 }",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "pg": "^8.23.1"
+  }
+}

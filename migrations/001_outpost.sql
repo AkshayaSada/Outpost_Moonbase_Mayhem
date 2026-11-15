@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS outpost_rooms (id UUID PRIMARY KEY DEFAULT gen_random_uuid(), code TEXT UNIQUE NOT NULL, host_id TEXT NOT NULL, status TEXT NOT NULL DEFAULT 'lobby', state JSONB NOT NULL DEFAULT '{}'::jsonb, revision INTEGER NOT NULL DEFAULT 1, created_at TIMESTAMPTZ NOT NULL DEFAULT now(), updated_at TIMESTAMPTZ NOT NULL DEFAULT now());
