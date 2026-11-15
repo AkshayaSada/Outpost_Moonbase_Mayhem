@@ -7,10 +7,8 @@ Open the app, choose a nickname, create a room and share the five-character code
 
 ## Stack
 - Browser frontend: HTML, CSS and JavaScript
-- Backend: Hatchable serverless JavaScript API routes
+- Backend: JavaScript API
 - Database: PostgreSQL (`outpost_rooms`)
-- Multiplayer updates: Hatchable events channels (`room:<CODE>`)
-- No paid AI dependency or required NASA API key
 
 ## Project files
 - `public/index.html`, `public/style.css`, `public/app.js`: game client
